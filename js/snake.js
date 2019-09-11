@@ -37,12 +37,12 @@ function snake(){
       if(vel < 10){
       frameRate(vel++);
     }
-    console.log("punti : " + (this.total + 1));
+    document.getElementById('score').innerHTML = 'Punti : ' + (this.total +1);
 
     if (vel < 10){
-      console.log("velocita : " + vel + " fps");
+      document.getElementById('speed').innerHTML = 'Velocit\à : ' + vel + ' fps';
     }else{
-      console.log("velocita massima raggiunta");
+      document.getElementById('speed').innerHTML = 'Velocit\à massima raggiunta';
     }
 
    this.total++;
