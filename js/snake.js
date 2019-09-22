@@ -23,10 +23,16 @@ function snake(){
   }
 
   this.show = function(){
+    if (snakeColor === 'rosso'){
+      fill(255, 0, 100);
+    }else if (snakeColor === 'random' || snakeColor === 'casuale'){
+      fill(random(255), random(255), random(255));
+    }else {
+      fill(snakeColor);
+    }
 
     for (var i = 0; i < this.pezzi.length; i++){
       rect(this.pezzi[i].x, this.pezzi[i].y, scl, scl);
-      fill(random(255), random(255), random(255));
     }
     rect(this.x, this.y, scl, scl);
   }

@@ -2,6 +2,10 @@ var s;
 var scl = 20;
 var food;
 var vel = 2;
+var snakeColor;
+
+snakeColor = prompt('scegli il colore del bruco');
+console.log(snakeColor);
 
 function setup() {
   createCanvas(600, 600);

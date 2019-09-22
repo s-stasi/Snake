@@ -6,3 +6,9 @@ body #punteggi {
   padding: 0;
   margin-left: 650px;
 }
+head #TextScroll {
+  position: Absolute;
+  left: 0px;
+  top: 0px;
+  visibility: Hidden;
+}
