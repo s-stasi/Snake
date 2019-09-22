@@ -24,7 +24,7 @@ function snake(){
 
   this.show = function(){
     if (snakeColor === 'rosso'){
-      fill(255, 0, 100);
+      fill(red);
     }else if (snakeColor === 'random' || snakeColor === 'casuale'){
       fill(random(255), random(255), random(255));
     }else {
