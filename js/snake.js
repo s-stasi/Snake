@@ -69,6 +69,7 @@ function snake(){
         console.log("hai perso");
         this.total = 0;
         this.pezzi = [];
+	frameRate(2);
       }
     }
   }
