@@ -1,25 +1,61 @@
 <!DOCTYPE html>
 <html lang="">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>snake</title>
-    <style> body {padding: 0; margin: 0;} </style>
-    <link rel="stylrsheet" type="text/css" src="css/index.css"
-  </head>
-  <body>
-    <h1>SNAKE</h1>
-    <div id="punteggi">
-      <p id="score">Punti : 0</p>
-      <p id="speed">Velocità : 2 fps</p>
-      <span id="TextScroll">
-      <script src=”libraries/no-scroll.js”></script>
+      
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+      <title>snake</title>
+      
+      <link rel="stylesheet" href="css/index.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  
+      
+      <script src=â€ťlibraries/no-scroll.jsâ€ť></script>
       <script src="libraries/p5.js"></script>
       <script src="libraries/p5.dom.js"></script>
       <script src="libraries/p5.sound.js"></script>
       <script src="js/snake.js"></script>
-        <script src="js/index.js"></script>
-      </span>
-    </div>
+      <script src="js/index.js"></script>
+      
+  </head>
+  <body>
+      
+      <header class="header clearfix">
+          <a href="" class="header__logo">logo</a>
+          <a href="" class="header__icon-bar">
+              <span></span>
+              <span></span>
+              <span></span>
+          </a>
+          <ul class="header__menu animate">
+              <li class="header__menu__item"><a href="">item</a></li>
+              <li class="header__menu__item"><a href="">item</a></li>
+              <li class="header__menu__item"><a href="">item</a></li>
+              <li class="header__menu__item"><a href="">item</a></li>
+              <li class="header__menu__item"><a href="">item</a></li>
+          </ul>
+      </header>
+      
+      
+      <section class="cover">
+        
+      </section>
+      
+      
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script>
+        $(document).ready(function(){
+        
+          $(".header__icon-bar").click(function(e){
+            
+            $(".header__menu").toggleClass('is-open');
+            e.preventDefault();
+            
+          })
+        });
+      </script>
   </body>
 </html>

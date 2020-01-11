@@ -1,14 +1,76 @@
-body {
-  margin: 0;
-  padding: 0;
+html,body{height:100%;}
+body{background: #eee;}
+
+
+.animate{
+    ~webkit~transition:all 0.3s ease-out;
+    transition:all 0.3s ease-out;
 }
-body #punteggi {
-  padding: 0;
-  margin-left: 650px;
+
+.header{background: #333}
+.header__logo{color: #fff;float:left;display:block;padding: 15px;}
+.header__menu{float:right;margin: 0;}
+.header__menu__item{display:inline-block;}
+.header__menu__item a{color: #fff;display:block;padding: 15px;}
+.header__menu__item a:hover{background: #000;}
+
+
+.header__icon-bar{float:right;padding: 20px;display:none;}
+.header__icon-bar span{display:block;height: 3px;width: 30px;background: #fff;margin-bottom: 5px;}
+
+
+.cover{height: 80%;border: 1px solid red;
+    background-image: url('https://source.unsplash.com/category/games');
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-position: center center;
+    
 }
-head #TextScroll {
-  position: Absolute;
-  left: 0px;
-  top: 0px;
-  visibility: Hidden;
+
+
+
+/*----------------------------
+tablet
+----------------------------*/
+@media (max-width: 998px){
+
+
+
 }
+
+
+/*----------------------------
+Smartphones
+----------------------------*/
+@media (max-width: 767px){
+
+.header__icon-bar{display:block;}
+
+.header__menu{width: 100%;height: 0;overflow:hidden;}
+.header__menu__item{display:block;}
+.is-open{height: 300px;overflow:auto;}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix { zoom: 1;}
+*:first-child+html .clearfix { zoom: 1;}
