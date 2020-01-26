@@ -8,7 +8,8 @@ snakeColor = prompt('scegli il colore del bruco');
 console.log(snakeColor);
 
 function setup() {
-  createCanvas(600, 600);
+  var Canvas = createCanvas(600, 600);
+  Canvas.parent('snake');
   s = new snake();
   frameRate(2);
   griglia();
