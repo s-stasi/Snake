@@ -43,11 +43,10 @@ function snake(){
       if(vel < 10){
       frameRate(vel++);
     }
-   this.total++;
+      this.total++;
       return true;
-
     }
-    else{
+    else {
       return false;
     }
   }

@@ -3,15 +3,28 @@ var scl = 20;
 var food;
 var vel = 2;
 var snakeColor;
+var pause = true;
 
 snakeColor = prompt('scegli il colore del bruco');
 console.log(snakeColor);
+
+
 
 function setup() {
   var Canvas = createCanvas(600, 600);
   Canvas.parent('snake');
   s = new snake();
   frameRate(2);
+  document.getElementById("button").onclick = function(){
+      pause = !pause;
+      if(pause == true) {
+        frameRate(0);
+      }
+      else {
+        frameRate(vel);
+      }
+      console.log(pause);
+  }
   griglia();
 }
 
