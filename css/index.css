@@ -98,6 +98,7 @@ Single
 .panel__copy__meta{font-weight: bold;font-size: 16px;	}
 .panel__copy__title{font-size: 32px;}
 .panel__copy__meta #snake .p5Canvas{overflow: hidden;}
+.panel__copy__button{display: inline-block;background: #fff; color:#000;padding: 15px 30px;text-decoration: none;margin: 0 0 8px 0;}
 
 
 /*-----------------------------

@@ -12,9 +12,11 @@ console.log(snakeColor);
 
 function setup() {
   var Canvas = createCanvas(600, 600);
+  background(51);
   Canvas.parent('snake');
   s = new snake();
-  frameRate(2);
+  griglia();
+  frameRate(0);
   document.getElementById("button").onclick = function(){
       pause = !pause;
       if(pause == true) {
@@ -25,7 +27,6 @@ function setup() {
       }
       console.log(pause);
   }
-  griglia();
 }
 
 function draw() {
@@ -41,6 +42,13 @@ function draw() {
 
   fill(255, 0, 100);
   rect(food.x, food.y, scl, scl);
+
+  for (var i = 0; i < snake().pezzi.length; i++){
+    if(snake().pezzi[i].x == food.x && snake().pezzi[i].y == food.y){
+      fill(255, 0, 100);
+      rect(food.x, food.y, scl, scl);
+    }
+  }
 }
 
 function griglia(){
